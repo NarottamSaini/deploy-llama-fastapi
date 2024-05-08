@@ -1,0 +1,34 @@
+fastapi
+sqlalchemy
+uvicorn
+pydantic
+## below 2 lib is used for hashing the password
+passlib
+bcrypt
+## python package for jwt-token
+python-jose ## downlaod openssl from : https://code.google.com/archive/p/openssl-for-windows/downloads and then run openssl-0.9.8k_X64\bin\openssl.exe file
+## type cmd: rand -hex 32
+## python package for accepting input through Auth form
+python-multipart
+## extra python package:
+email-validator
+
+# python -m virtualenv env
+# cd env
+# source bin/activate
+# cd ..
+
+## steps to create new venv (https://stackoverflow.com/questions/71279124/getting-error-in-vs-code-when-trying-to-create-virtual-environment-on-windows)
+# https://virtualenv.pypa.io/en/latest/user_guide.html
+# python -m venv venv 
+# ./venv/Scripts/activate  or .\env_name\Scripts\activate
+# which python3
+
+
+# uvicorn product.main:app --reload
+# python -m uvicorn product.main:app --reload
+#Python installs it's scripts in the scripts folder at the following path: c:\users\username\appdata\roaming\python\python39\scripts
+#Place that path in the system and user environment variable. This will solve the problem.
+## https://fastapi.tiangolo.com/tutorial/request-forms/
+## pip install Flask==1.1.1 --user --trusted-host 10.226.58.48 -i http://10.226.58.48:8081/repository/crain_pypi_repo/simple/
+## pip install uvicorn --user --trusted-host 10.226.58.48 -i http://10.226.58.48:8081/repository/crain_pypi_repo/simple/
